@@ -1,0 +1,933 @@
+\documentclass{article}
+\usepackage[left=8em,right=8em]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{lineno}
+\usepackage{relsize}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+}
+%\linenumbers
+\renewcommand*{\proofname}{Proof}
+\date{}
+\author{}
+\begin{document}
+\centerline{\textbf{1.1 Excerises}}
+$ $\newline
+
+\textbf{Ex 1.}
+
+$
+\begin{bmatrix}
+1 &5 &7\\
+-2 &-7 &-5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &5 &7\\
+0 &3 &9
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &5 &7\\
+0 &1 &3
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &-8\\
+0 &1 &3
+\end{bmatrix}
+\implies x_1=-8, x_2=3
+$
+
+\textbf{Ex 2.}
+
+$
+\begin{bmatrix}
+2 &4 &-4\\
+5 &7 &11
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &2 &-2\\
+5 &7 &11
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &2 &-2\\
+0 &-3 &21
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &2 &-2\\
+0 &1 &-7
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &-12\\
+0 &1 &-7
+\end{bmatrix}
+\implies
+x_1=12, x_2=-7
+$
+
+\textbf{Ex 3.}
+
+$
+\begin{bmatrix}
+1 &5 &7\\
+1 &-2 &-2
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &5 &7\\
+0 &-7 &-9
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &5 &7\\
+0 &1 &9/7
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &4/7\\
+0 &1 &9/7
+\end{bmatrix}
+\implies x_1=\dfrac{4}{7}, x_2=\dfrac{9}{7}
+$
+
+\textbf{Ex 4.}
+
+$
+\begin{bmatrix}
+1 &-5 &1\\
+3 &-7 &-5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-5 &1\\
+0 &8 &-8
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-5 &1\\
+0 &1 &-1
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &0 &-4\\
+0 &1 &-1
+\end{bmatrix}
+\implies x_1=-4, x_2=-1
+$
+
+\textbf{Ex 5.} Add row-$3$ multiplied by $3$ to row-$2$. Add row-$3$ multiplied by $-5$ to row-$1$.
+
+\textbf{Ex 6.} Add row-$3$ multiplied by $-3$ to row-$4$. Multiply row-$4$ with $\dfrac{-1}{5}$.
+
+\textbf{Ex 7.} Observe that row-$3$ has no solutions. So the system has no solutions.
+
+\textbf{Ex 8.}
+
+$
+\begin{bmatrix}
+1 &-4 &9 &0\\
+0 &1 &7 &0\\
+0 &0 &2 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &9 &0\\
+0 &1 &7 &0\\
+0 &0 &1 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &9 &0\\
+0 &1 &0 &0\\
+0 &0 &1 &0
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &0 &0 &0\\
+0 &1 &0 &0\\
+0 &0 &1 &0
+\end{bmatrix}
+\implies x_1 = x_2 = x_3 = 0
+$
+
+\textbf{Ex 9.}
+
+$
+\begin{bmatrix}
+1 &-1 &0 &0 &-4\\
+0 &1 &-3 &0 &-7\\
+0 &0 &1 &-3 &-1\\
+0 &0 &0 &2 &4
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-1 &0 &0 &-4\\
+0 &1 &-3 &0 &-7\\
+0 &0 &1 &-3 &-1\\
+0 &0 &0 &1 &2
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-1 &0 &0 &-4\\
+0 &1 &-3 &0 &-7\\
+0 &0 &1 &0 &5\\
+0 &0 &0 &1 &2
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &-1 &0 &0 &-4\\
+0 &1 &0 &0 &8\\
+0 &0 &1 &0 &5\\
+0 &0 &0 &1 &2
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &0 &4\\
+0 &1 &0 &0 &8\\
+0 &0 &1 &0 &5\\
+0 &0 &0 &1 &2
+\end{bmatrix}
+\implies x_1=4, x_2=8, x_3=5, x_4=2
+$
+
+\textbf{Ex 10.}
+
+$
+\begin{bmatrix}
+1 &-2 &0 &3 &-2\\
+0 &1 &0 &-4 &7\\
+0 &0 &1 &0 &6\\
+0 &0 &0 &1 &-3
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-2 &0 &3 &-2\\
+0 &1 &0 &0 &-5\\
+0 &0 &1 &0 &6\\
+0 &0 &0 &1 &-3
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-2 &0 &0 &7\\
+0 &1 &0 &0 &-5\\
+0 &0 &1 &0 &6\\
+0 &0 &0 &1 &-3
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &0 &0 &0 &-3\\
+0 &1 &0 &0 &-5\\
+0 &0 &1 &0 &6\\
+0 &0 &0 &1 &-3
+\end{bmatrix}
+\implies x_1=-3, x_2=-5, x_3=6, x_4=-3
+$
+
+\textbf{Ex 11.}
+
+$
+\begin{bmatrix}
+0 &1 &4 &-5\\
+1 &3 &5 &-2\\
+3 &7 &7 &6
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+0 &1 &4 &-5\\
+1 &3 &5 &-2\\
+0 &-2 &-8 &12
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+0 &1 &4 &-5\\
+1 &3 &5 &-2\\
+0 &1 &4 &-6
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &3 &5 &-2\\
+0 &1 &4 &-5\\
+0 &1 &4 &-6
+\end{bmatrix}
+\implies \text{The bottom two rows lead to a contradiction. Hence there is no solution.}
+$
+
+\textbf{Ex 12.}
+
+$
+\begin{bmatrix}
+1 &-3 &4 &-4\\
+3 &-7 &7 &-8\\
+-4 &6 &-1 &7
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-3 &4 &-4\\
+0 &2 &-5 &4\\
+-4 &6 &-1 &7
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-3 &4 &-4\\
+0 &2 &-5 &4\\
+0 &-6 &15 &-9
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &-3 &4 &-4\\
+0 &2 &-5 &4\\
+0 &2 &-5 &3
+\end{bmatrix}
+\implies \text{The bottom two rows lead to a contradiction. Hence there is no solution.}
+$
+
+\textbf{Ex 13.}
+
+$
+\begin{bmatrix}
+1 &0 &-3 &8\\
+2 &2 &9 &7\\
+0 &1 &5 &-2
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &-3 &8\\
+0 &2 &15 &-9\\
+0 &1 &5 &-2
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &-3 &8\\
+0 &0 &5 &-5\\
+0 &1 &5 &-2
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &-3 &8\\
+0 &1 &5 &-2\\
+0 &0 &5 &-5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &-3 &8\\
+0 &1 &5 &-2\\
+0 &0 &1 &-1\\
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &-3 &8\\
+0 &1 &0 &3\\
+0 &0 &1 &-1\\
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &5\\
+0 &1 &0 &3\\
+0 &0 &1 &-1\\
+\end{bmatrix}
+\implies x_1=5, x_2=3, x_3=-1
+$
+
+\textbf{Ex 14.}
+
+$
+\begin{bmatrix}
+1 &-3 &0 &5\\
+-1 &1 &5 &2\\
+0 &1 &1 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+0 &-2 &5 &7\\
+-1 &1 &5 &2\\
+0 &1 &1 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+0 &0 &7 &7\\
+-1 &1 &5 &2\\
+0 &1 &1 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+0 &0 &1 &1\\
+-1 &1 &5 &2\\
+0 &1 &1 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+-1 &1 &5 &2\\
+0 &1 &1 &0\\
+0 &0 &1 &1
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+-1 &1 &5 &2\\
+0 &1 &0 &-1\\
+0 &0 &1 &1
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+-1 &1 &0 &-3\\
+0 &1 &0 &-1\\
+0 &0 &1 &1
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+-1 &0 &0 &-2\\
+0 &1 &0 &-1\\
+0 &0 &1 &1
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &0 &0 &2\\
+0 &1 &0 &-1\\
+0 &0 &1 &1
+\end{bmatrix}
+\implies x_1=2, x_2=-1, x_3=1
+$
+
+\textbf{Ex 15.}
+
+$
+\begin{bmatrix}
+1 &0 &3 &0 &2\\
+0 &1 &0 &-3 &3\\
+0 &-2 &3 &2 &1\\
+3 &0 &0 &7 &-5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &3 &0 &2\\
+0 &1 &0 &-3 &3\\
+0 &-2 &3 &2 &1\\
+0 &0 &-9 &7 &-11
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &3 &0 &2\\
+0 &1 &0 &-3 &3\\
+0 &0 &3 &-4 &7\\
+0 &0 &-9 &7 &-11
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &0 &3 &0 &2\\
+0 &1 &0 &-3 &3\\
+0 &0 &3 &-4 &7\\
+0 &0 &0 &-5 &10
+\end{bmatrix}
+\implies \text{System is consistent.}
+$
+
+\textbf{Ex 16.}
+
+$
+\begin{bmatrix}
+1 &0 &0 &-2 &-3\\
+0 &2 &2 &0 &0\\
+0 &0 &1 &3 &1\\
+-2 &3 &2 &1 &5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &-2 &-3\\
+0 &2 &2 &0 &0\\
+0 &0 &1 &3 &1\\
+0 &3 &2 &-3 &-1
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &-2 &-3\\
+0 &3 &2 &-3 &-1\\
+0 &2 &2 &0 &0\\
+0 &0 &1 &3 &1
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &-2 &-3\\
+0 &3 &2 &-3 &-1\\
+0 &1 &1 &0 &0\\
+0 &0 &1 &3 &1
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &-2 &-3\\
+0 &3 &2 &-3 &-1\\
+0 &1 &1 &0 &0\\
+0 &0 &1 &3 &1
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &-2 &-3\\
+0 &3 &2 &-3 &-1\\
+0 &0 &\dfrac{1}{3} &1 &\dfrac{1}{3}\\
+0 &0 &1 &3 &1
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &-2 &-3\\
+0 &3 &2 &-3 &-1\\
+0 &0 &1 &3 &1\\
+0 &0 &0 &0 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &-2 &-3\\
+0 &3 &0 &-9 &-3\\
+0 &0 &1 &3 &1\\
+0 &0 &0 &0 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &-2 &-3\\
+0 &1 &0 &-3 &-1\\
+0 &0 &1 &3 &1\\
+0 &0 &0 &0 &0
+\end{bmatrix}
+\implies \text{System is consistent.}
+$
+
+\textbf{Ex 17.}
+
+$
+\begin{bmatrix}
+1 &-4 &1\\
+2 &-1 &-3\\
+-1 &-3 &4
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &1\\
+0 &-7 &5\\
+-1 &-3 &4
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &1\\
+-1 &-3 &4\\
+0 &-7 &5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &1\\
+0 &-7 &5\\
+0 &-7 &5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &1\\
+0 &-7 &5\\
+0 &0 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &-13/7\\
+0 &-7 &5\\
+0 &0 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &-13/7\\
+0 &1 &-5/7\\
+0 &0 &0
+\end{bmatrix}
+\implies x_1 = \dfrac{-13}{7}, x_2 = \dfrac{-5}{7}
+$
+
+\textbf{Ex 18.}
+
+$
+\begin{bmatrix}
+1 &2 &1 &4\\
+0 &1 &-1 &1\\
+1 &3 &0 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+0 &-1 &1 &4\\
+0 &1 &-1 &1\\
+1 &3 &0 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &3 &0 &0\\
+0 &-1 &1 &4\\
+0 &1 &-1 &1
+\end{bmatrix}
+\implies\\
+\begin{bmatrix}
+1 &3 &0 &0\\
+0 &-1 &1 &4\\
+0 &0 &0 &5
+\end{bmatrix}
+\implies \text{System is not consistent, hence there is no common point of intersection.}
+$
+
+\textbf{Ex 19.}
+
+$
+\begin{bmatrix}
+1 &h &4\\
+3 &6 &8
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &h &4\\
+0 &6-3h &-4
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &6-2h &0\\
+0 &6-3h &-4
+\end{bmatrix}
+\implies \text{System is consistent when $h \neq 2$.}
+$
+
+\textbf{Ex 20.}
+
+$
+\begin{bmatrix}
+1 &h &-3\\
+-2 &4 &6
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &h &-3\\
+-1 &2 &3
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &h &-3\\
+0 &2+h &0
+\end{bmatrix}
+\implies \text{System is consistent for all $h$.}
+$
+
+\textbf{Ex 21.}
+
+$
+\begin{bmatrix}
+1 &3 &-2\\
+-4 &h &8
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &3 &-2\\
+-1 &h/4 &2
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &3 &-2\\
+0 &h/4+3 &0
+\end{bmatrix}
+\implies \text{System is consistent for all $h$.}
+$
+
+\textbf{Ex 22.}
+
+$
+\begin{bmatrix}
+2 &-3 &h\\
+-6 &9 &5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+2 &-3 &h\\
+0 &0 &5+3h
+\end{bmatrix}
+\implies \text{System is consistent when $h=\dfrac{-5}{3}$.}
+$
+
+\textbf{Ex 23.}
+
+a) True. b) False, rows are stated first. So a $5 \times 6$ matrix means 5 rows and 6 columns. c) False, the statement refers to a single solution. A solution set has one or more solutions. d) True, see middle of page 7.
+
+\textbf{Ex 24.}
+
+a) True. b) False. c) False. An inconsistent system has no solution. d) True
+
+\textbf{Ex 25.}
+
+$
+\begin{bmatrix}
+1 &-4 &7 &g\\
+0 &3 &-5 &h\\
+-2 &5 &-9 &k
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &7 &g\\
+-2 &5 &-9 &k\\
+0 &3 &-5 &h
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &7 &g\\
+0 &-3 &5 &k+2g\\
+0 &3 &-5 &h
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &7 &g\\
+0 &-3 &5 &k+2g\\
+0 &0 &0 &h+k+2g
+\end{bmatrix}
+\implies \text{System is consisten when $h+k+2g = 0$}
+$
+
+\textbf{Ex 26.}
+
+$
+\begin{bmatrix}
+-3 &-5 &7 &1\\
+0 &1 &0 &1\\
+0 &0 &1 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+-3 &-5 &7 &1\\
+0 &1 &1 &1\\
+0 &0 &1 &0
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+-3 &-5 &7 &1\\
+0 &4 &4 &4\\
+0 &0 &1 &0
+\end{bmatrix}
+\implies x_1=-2, x_2=1, x_3=0
+$
+
+\textbf{Ex 27.}
+
+$
+\begin{bmatrix}
+1 &3 &f\\
+c &d &g
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &3 &f\\
+0 &d-3c &g-fc
+\end{bmatrix}
+\implies d - 3c \neq 0
+\implies d \neq 3c
+$
+
+\textbf{Ex 28.}
+
+$
+\begin{bmatrix}
+a &b &f\\
+c &d &g
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+a &b &f\\
+0 &d-\dfrac{cb}{a} &g-\dfrac{fc}{a}
+\end{bmatrix}
+\implies d-\dfrac{cb}{a} \neq 0 \implies ad \neq cb
+$
+
+\textbf{Ex 29 and 30.} Skipped.
+
+\textbf{Ex 31.}
+
+$
+\begin{bmatrix}
+1 &-2 &1 &0\\
+0 &5 &-2 &8\\
+4 &-1 &3 &-6
+\end{bmatrix}
+\leftrightarrow
+\begin{bmatrix}
+1 &-2 &1 &0\\
+0 &5 &-2 &8\\
+0 &7 &-1 &-6
+\end{bmatrix}
+$
+
+\textbf{Ex 32.}
+
+$
+\begin{bmatrix}
+1 &2 &-5 &0\\
+0 &1 &-3 &-2\\
+0 &-3 &9 &5
+\end{bmatrix}
+\leftrightarrow
+\begin{bmatrix}
+1 &2 &-5 &0\\
+0 &1 &-3 &-2\\
+0 &0 &0 &-1
+\end{bmatrix}
+$
+
+\newpage
+
+\textbf{Ex 33.}
+
+\begin{align*}
+4T_1 - T_2 - T_4 = 30\\
+- T_1 + 4T_2 - T_3 = 60\\
+- T_2 + 4T_3 - T_4 = 70\\
+- T_1 - T_3 + 4T_4 = 40 
+\end{align*}
+
+\textbf{Ex 34.}
+
+$
+\begin{bmatrix}
+4 &-1 &0 &-1 &30\\
+-1 &4 &-1 &0 &60\\
+0 &-1 &4 &-1 &70\\
+-1 &0 &-1 &4 &40
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+0 &15 &-4 &-1 &270\\
+-1 &4 &-1 &0 &60\\
+0 &-1 &4 &-1 &70\\
+-1 &0 &-1 &4 &40
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+0 &15 &-4 &-1 &270\\
+1 &-4 &1 &0 &-60\\
+0 &-1 &4 &-1 &70\\
+-1 &0 &-1 &4 &40
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &1 &0 &-60\\
+0 &15 &-4 &-1 &270\\
+0 &-1 &4 &-1 &70\\
+0 &-4 &0 &4 &-20
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &1 &0 &-60\\
+0 &15 &-4 &-1 &270\\
+0 &-1 &4 &-1 &70\\
+0 &4 &0 &-4 &20
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &-4 &1 &0 &-60\\
+0 &15 &-4 &-1 &270\\
+0 &-1 &4 &-1 &70\\
+0 &1 &0 &-1 &5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &15 &-4 &-1 &270\\
+0 &-1 &4 &-1 &70\\
+0 &1 &0 &-1 &5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &15 &-4 &-1 &270\\
+0 &-1 &4 &-1 &70\\
+0 &0 &4 &-2 &75
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &0 &56 &-16 &1320\\
+0 &-1 &4 &-1 &70\\
+0 &0 &4 &-2 &75
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &0 &7 &-2 &165\\
+0 &-1 &4 &-1 &70\\
+0 &0 &4 &-2 &75
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &-1 &4 &-1 &70\\
+0 &0 &7 &-2 &165\\
+0 &0 &4 &-2 &75
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &1 &-4 &1 &-70\\
+0 &0 &7 &-2 &165\\
+0 &0 &4 &-2 &75
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &1 &0 &-1 &5\\
+0 &0 &7 &-2 &165\\
+0 &0 &4 &-2 &75
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &1 &0 &-1 &5\\
+0 &0 &7 &-2 &165\\
+0 &0 &0 &-6/7 &-135/7
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &1 &0 &-1 &5\\
+0 &0 &7 &-2 &165\\
+0 &0 &0 &1 &22.5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &1 &0 &0 &27.5\\
+0 &0 &7 &-2 &165\\
+0 &0 &0 &1 &22.5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &1 &0 &0 &27.5\\
+0 &0 &7 &0 &210\\
+0 &0 &0 &1 &22.5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &1 &-4 &-40\\
+0 &1 &0 &0 &27.5\\
+0 &0 &1 &0 &30\\
+0 &0 &0 &1 &22.5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &-4 &-70\\
+0 &1 &0 &0 &27.5\\
+0 &0 &1 &0 &30\\
+0 &0 &0 &1 &22.5
+\end{bmatrix}
+\implies
+\begin{bmatrix}
+1 &0 &0 &0 &20\\
+0 &1 &0 &0 &27.5\\
+0 &0 &1 &0 &30\\
+0 &0 &0 &1 &22.5
+\end{bmatrix}
+\implies T_1 = 20, T_2=27.5, T_3 = 30, T_4 = 22.5
+$
+
+\end{document}
